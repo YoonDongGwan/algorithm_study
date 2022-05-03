@@ -1,23 +1,31 @@
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.PriorityQueue;
 import java.util.Random;
 
 public class Sort {
     public static void main(String[] args) {
-        int n = (int)Math.pow(2, 16);
-        int[] array = new int[n];
         Random random = new Random();
-        for (int i=0; i < n; i++){
-            array[i] = random.nextInt(n);
-        }
         Sort sort = new Sort();
-        long start = System.currentTimeMillis();
-        sort.BubbleSort(array);
-        long end = System.currentTimeMillis();
-        System.out.println("소요 시간 : " + (end - start)+ " ms");
-        for (int i=0; i<array.length; i++){
-            System.out.printf(array[i] + " ");
+
+        int n = (int)Math.pow(2, 20);
+        int[] array = new int[n];
+//        Integer[] array = new Integer[n];
+        for (int j=0; j < n; j++){
+            array[j] = random.nextInt(n);
         }
+//        Arrays.sort(array, Collections.reverseOrder()); // 배열을 역순으로 정렬
+        Arrays.sort(array);
+
+        System.out.println("정렬된 배열 생성 완료, 시간 측정 시작");
+        long start = System.nanoTime();
+        sort.ShellSort(array);
+        long end = System.nanoTime();
+        System.out.println("소요 시간 : " + (end - start)+ " ns");
+
+//        for (int i=0; i<array.length; i++){
+//            System.out.printf(array[i] + " ");
+//        }
     }
     public void BubbleSort(int[] array){
         for (int i=0; i<array.length; i++){
@@ -71,13 +79,13 @@ public class Sort {
         }
     }
     public void HeapSort(int[] array){
-        PriorityQueue heap = new PriorityQueue();
+        PriorityQueue priorityQueue = new PriorityQueue();
         int index = 0;
         for(int i : array) {
-            heap.add(i);
+            priorityQueue.add(i);
         }
-        while(!heap.isEmpty()){
-            array[index] = (int)heap.remove();
+        while(!priorityQueue.isEmpty()){
+            array[index] = (int)priorityQueue.remove();
             index++;
         }
     }
