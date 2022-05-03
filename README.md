@@ -48,4 +48,27 @@
 그럼에도 불구하고, 힙 정렬과 퀵 정렬의 성능은 우수함.
 
 ## 버블 정렬
+![버블](https://user-images.githubusercontent.com/39906922/166510343-389d1ef1-738c-40d5-a835-a2facc7d82bb.png)
+
+정렬 알고리즘 중 가장 오랜 시간이 소요되었으며, 입력 수가 증가할수록 차이가 커짐.
+
+## 선택 정렬
+![선택](https://user-images.githubusercontent.com/39906922/166510624-eb29b9cc-e186-425a-868c-7dd52344cc53.png)
+
+## 삽입 정렬
+![삽입](https://user-images.githubusercontent.com/39906922/166510978-5d22940c-0d1d-4965-8f76-4c9af604ffe1.png)
+
+## 쉘 정렬
+![쉘](https://user-images.githubusercontent.com/39906922/166511217-52b87fa0-a066-434e-90cb-6488eca898bc.png)
+
+## 힙 정렬
+![힙](https://user-images.githubusercontent.com/39906922/166511331-1a969556-4608-48b9-8c9b-ba21b42792b1.png)
+
+모든 경우의 편차가 크지 않음.
+
+## 퀵 정렬
+![퀵](https://user-images.githubusercontent.com/39906922/166511443-5ecccb04-da63-4c4e-a597-6f1113761843.png)
+
+시행한 정렬 알고리즘 중 가장 성능이 뛰어남.
+
 
