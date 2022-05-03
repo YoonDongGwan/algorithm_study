@@ -65,7 +65,8 @@
 ## 힙 정렬
 ![힙](https://user-images.githubusercontent.com/39906922/166511331-1a969556-4608-48b9-8c9b-ba21b42792b1.png)
 
-모든 경우의 편차가 크지 않음.
+모든 경우의 편차가 크지 않음.  
+역순으로 정렬된 배열보다 무작위 배열이 수행이 더 오래 걸림.
 
 ## 퀵 정렬
 ![퀵](https://user-images.githubusercontent.com/39906922/166511443-5ecccb04-da63-4c4e-a597-6f1113761843.png)
