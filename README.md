@@ -50,30 +50,46 @@
 
 ## 버블 정렬
 ![버블](https://user-images.githubusercontent.com/39906922/166510343-389d1ef1-738c-40d5-a835-a2facc7d82bb.png)
-
+시간 복잡도 : **O(n^2) (최악, 평균) / O(n) (최선)**
 정렬 알고리즘 중 가장 오랜 시간이 소요되었으며, 입력 수가 증가할수록 차이가 커짐.
 
 ## 선택 정렬
 ![선택](https://user-images.githubusercontent.com/39906922/166510624-eb29b9cc-e186-425a-868c-7dd52344cc53.png)
+시간 복잡도 : **O(n^2)**
 
 ## 삽입 정렬
 ![삽입](https://user-images.githubusercontent.com/39906922/166510978-5d22940c-0d1d-4965-8f76-4c9af604ffe1.png)
+시간 복잡도 : **O(n) (최선) / O(n^2) (최악)**
 
 ## 쉘 정렬
 ![쉘](https://user-images.githubusercontent.com/39906922/166511217-52b87fa0-a066-434e-90cb-6488eca898bc.png)
+시간 복잡도 : **O(n^2) (최악) / O(n^1.25) (평균)**
 
 ## 힙 정렬
 ![힙](https://user-images.githubusercontent.com/39906922/166511331-1a969556-4608-48b9-8c9b-ba21b42792b1.png)
-
+시간 복잡도 : **O(nlogn)**  
 모든 경우의 편차가 크지 않음.  
 역순으로 정렬된 배열보다 무작위 배열이 수행이 더 오래 걸림.
 
 ## 퀵 정렬
 ![퀵](https://user-images.githubusercontent.com/39906922/166511443-5ecccb04-da63-4c4e-a597-6f1113761843.png)
-
+시간 복잡도 : **O(n^2) (최악) / O(nlogn) (평균, 최선)**  
 시행한 정렬 알고리즘 중 가장 성능이 뛰어남.
 
 ---
+## Log2(수행 시간) 그래프
+### 무작위로 섞인 배열
+![로그2무작위](https://user-images.githubusercontent.com/39906922/166948282-4e1f856b-20a9-4781-be6e-701717f74952.png)
+
+
+### 정렬된 배열
+![로그2정렬](https://user-images.githubusercontent.com/39906922/166948381-7bd35d11-105b-4bc6-bd97-cb6198cc5cc0.png)
+
+
+### 역순으로 정렬된 배열
+![로그2역순](https://user-images.githubusercontent.com/39906922/166948477-e05ddd80-20d3-4fb6-a371-b60168a84c94.png)
+
+
 
 전체적으로 **퀵 정렬**의 성능이 가장 우수하고, **버블 정렬**의 성능이 가장 낮았다.
 
